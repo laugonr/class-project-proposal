@@ -41,6 +41,7 @@ print("")
 print("Executing \"git add -A\":")
 print("")
 
+# git add command
 resultGitAdd = subprocess.run(["git", "add", "-A"], capture_output=True, text=True)
 print(resultGitAdd.stdout)
 print("STDERR:")
@@ -50,6 +51,7 @@ print(resultGitAdd.stderr)
 print("Executing \"git commit -m '{}'\":" .format(commit_msg))
 print("")
 
+# git commit command
 resultGitCommit = subprocess.run(["git", "commit", "-m", commit_msg], capture_output=True, text=True)
 print(resultGitCommit.stdout)
 print("STDERR:")
@@ -59,6 +61,7 @@ print(resultGitCommit.stderr)
 print("Executing \"git push\":")
 print("")
 
+# git push command
 resultGitPush = subprocess.run(["git", "push"], capture_output=True, text=True)
 print(resultGitPush.stdout)
 print("STDERR:")
