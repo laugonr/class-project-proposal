@@ -25,9 +25,9 @@ commands = [
 
 # Show commands before running
 print("The following commands will be executed:")
-print("  git add -A")
-print(f"  git commit -m \"{commit_msg}\"")
-print("  git push")
+print("git add -A")
+print(f"git commit -m \"{commit_msg}\"")
+print("git push")
 
 # Confirm unless forced
 if not args.force:
