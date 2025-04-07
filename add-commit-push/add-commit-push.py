@@ -12,6 +12,7 @@ print(resultGitStatus.stdout)
 print("Executing \"git add -A\":")
 print("")
 
+# Run the git add command
 resultGitAdd = subprocess.run(["git", "add", "-A"], capture_output=True, text=True)
 print(resultGitAdd.stdout)
 print("STDERR:")
@@ -21,7 +22,7 @@ print(resultGitAdd.stderr)
 print("Executing \"git commit -m 'Update files.'\":")
 print("")
 
-# NOTE: No extra quotes around commit message!
+# Run the git commit command
 resultGitCommit = subprocess.run(["git", "commit", "-m", "Update files."], capture_output=True, text=True)
 print(resultGitCommit.stdout)
 print("STDERR:")
@@ -31,6 +32,7 @@ print(resultGitCommit.stderr)
 print("Executing \"git push\":")
 print("")
 
+# Run the git push command
 resultGitPush = subprocess.run(["git", "push"], capture_output=True, text=True)
 print(resultGitPush.stdout)
 print("STDERR:")
