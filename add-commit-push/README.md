@@ -25,6 +25,6 @@ This Python script automates the common Git workflow:
 
 ## Credit
 
-ChatGPT is used for the command-line argument parsing section.
+ChatGPT is used for the command-line argument parsing section and
 Eric Pouge In-Class Demo
 
