@@ -1,1 +1,2 @@
-# class-project-proposal
+# snapshift
+Author: Ruben Laugon
