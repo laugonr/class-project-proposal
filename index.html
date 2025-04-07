@@ -1,10 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Class Project Proposal</title>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnapShift - Class Product Proposal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .date {
+      color: rgb(40, 217, 20);
+      font-size: 0.9em;
+      margin-top: 20px;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 150px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Class Project Proposal</h1>
-    <p>This is the starting page for the class project proposal.</p>
+  <div class="container">
+    <img src="logo.png" alt="SnapShift Logo" class="logo" />
+    <h1>SnapShift</h1>
+
+    <h2>Team Member</h2>
+    <ul>
+      <li>Ruben Laugon</li>
+    </ul>
+
+    <h2>Application Overview</h2>
+    <p>SnapShift is a web-based image format converter designed to be intuitive and user-friendly. Users can upload an image, select a new file format (e.g., JPG to PNG), and instantly convert it with a single click. No sign-up required, no clutter—just fast and simple image conversion.</p>
+
+    <h2>Technology Overview</h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, HTML, CSS, JavaScript</li>
+      <li><strong>Libraries/Frameworks:</strong> Flask (Python), Pillow (Python Imaging Library)</li>
+      <li><strong>Platforms:</strong> Web (initially desktop browser focused)</li>
+      <li><strong>Hosting:</strong> GitHub Pages (frontend), Render.com or PythonAnywhere (backend)</li>
+    </ul>
+
+    <h2>Feature List (MVP)</h2>
+    <ul>
+      <li>Drag-and-drop image upload</li>
+      <li>Automatic image file type detection</li>
+      <li>Selectable output formats (JPG, PNG, BMP, etc.)</li>
+      <li>Instant image conversion</li>
+      <li>Downloadable converted file</li>
+    </ul>
+
+    <h2>Future Feature List</h2>
+    <ul>
+      <li>Batch image conversion</li>
+      <li>Image compression/resize tools</li>
+      <li>Dark mode UI</li>
+      <li>Web-based mobile support</li>
+    </ul>
+
+    <h2>Basic Technical Features</h2>
+    <ul>
+      <li>Python-based backend with Flask</li>
+      <li>File upload handling</li>
+      <li>Image format conversion using Pillow</li>
+      <li>Frontend with HTML/CSS and JavaScript</li>
+      <li>Hosting via GitHub Pages and Render/PythonAnywhere</li>
+    </ul>
+
+    <h2>Advanced Technical Features</h2>
+    <ul>
+      <li>Dynamic format detection using MIME types</li>
+      <li>Real-time UI updates with JavaScript</li>
+      <li>Optional format-specific settings (e.g., compression level)</li>
+      <li>Secure file handling and automatic cleanup</li>
+      <li>Asynchronous processing for larger files (if time permits)</li>
+    </ul>
+
+    <p class="date">Proposal Last Updated: April 6, 2025</p>
+  </div>
 </body>
 </html>
