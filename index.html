@@ -6,34 +6,75 @@
   <title>SnapShift - Class Product Proposal</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+
     .container {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      max-width: 850px;
+      width: 90%;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      animation: fadeIn 0.5s ease-in;
     }
-    h1, h2 {
-      color: #2a8ea0;
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
+
+    h1 {
+      text-align: center;
+      color: #00796b;
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+    }
+
+    h2 {
+      color: #004d40;
+      border-bottom: 2px solid #cfd8dc;
+      padding-bottom: 5px;
+      margin-top: 1.8em;
+    }
+
+    p, li {
+      color: #333;
+      line-height: 1.6;
+    }
+
     ul {
       padding-left: 20px;
     }
-    .date {
-      color: rgb(40, 217, 20);
-      font-size: 0.9em;
-      margin-top: 20px;
+
+    ul li {
+      margin-bottom: 8px;
+      transition: transform 0.2s;
     }
+
+    ul li:hover {
+      transform: translateX(5px);
+      color: #00796b;
+    }
+
+    .date {
+      text-align: right;
+      color: #616161;
+      font-size: 0.9em;
+      margin-top: 30px;
+    }
+
     .logo {
       display: block;
-      margin: 0 auto 20px auto;
-      width: 150px;
+      margin: 0 auto 20px;
+      width: 120px;
     }
   </style>
 </head>
@@ -48,44 +89,43 @@
     </ul>
 
     <h2>Application Overview</h2>
-    <p>SnapShift is a straightforward web app that simplifies image conversion. Just upload your image, choose from PNG, JPEG, or PDF, and click "Convert." That’s all there is to it. No signups, no popups, and no confusion. Whether you’re changing a JPG to a PNG or turning an image into a PDF, SnapShift gets the job done in seconds.</p>
+    <p>SnapShift is a user-friendly web app that makes image format conversion quick and hassle-free. Upload your file, select a new format (PNG, JPG, or PDF), and convert it instantly—no signups, ads, or confusion.</p>
 
     <h2>Technology Overview</h2>
     <ul>
       <li><strong>Languages:</strong> Python, HTML, CSS, JavaScript</li>
-      <li><strong>Libraries/Frameworks:</strong> Flask (Python), Pillow (Python Imaging Library)</li>
-      <li><strong>Platforms:</strong> Web (initially desktop browser focused)</li>
-      <li><strong>Hosting:</strong> GitHub Pages (frontend), Render.com or PythonAnywhere (backend)</li>
+      <li><strong>Libraries:</strong> Flask (backend), Pillow (image processing)</li>
+      <li><strong>Platform:</strong> Desktop web browser</li>
+      <li><strong>Hosting:</strong> GitHub Pages (frontend), Render or PythonAnywhere (backend)</li>
     </ul>
 
     <h2>Feature List (MVP)</h2>
     <ul>
       <li>Drag-and-drop image upload</li>
-      <li>Selectable output formats (JPG,PNG,PDF)</li>
+      <li>Selectable output formats (JPG, PNG, PDF)</li>
       <li>Instant image conversion</li>
       <li>Downloadable converted file</li>
     </ul>
 
     <h2>Future Feature List</h2>
     <ul>
-      <li>Batch image conversion</li>
-      <li>Image compression/resize tools</li>
-      <li>Dark mode UI</li>
-      <li>Web-based support</li>
+      <li>Batch conversion</li>
+      <li>Image compression/resizing</li>
+      <li>Dark mode interface</li>
+      <li>Live customer support</li>
     </ul>
 
     <h2>Basic Technical Features</h2>
     <ul>
-      <li>Python-based backend with Flask</li>
-      <li>File upload handling</li>
+      <li>Flask-based backend</li>
+      <li>Secure file upload handling</li>
       <li>Image format conversion using Pillow</li>
-      <li>Frontend with HTML/CSS and JavaScript</li>
-      <li>Hosting via GitHub Pages and Render/PythonAnywhere</li>
+      <li>Frontend built with HTML/CSS/JavaScript</li>
     </ul>
 
     <h2>Advanced Technical Features</h2>
     <ul>
-      <li>Optional format-specific settings (e.g., compression level)</li>
+      <li>Optional format settings (e.g., quality, DPI)</li>
     </ul>
 
     <p class="date">Proposal Last Updated: March 20, 2025</p>
